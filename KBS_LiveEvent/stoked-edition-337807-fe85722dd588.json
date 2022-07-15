@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "stoked-edition-337807",
+  "private_key_id": "fe85722dd58843a2916cc3d571bc7716cf02673a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCp1K97wk+vCNA4\n4fybr+tB4/RvoycSRVUEN76jkhSTmUPnbYsWIwsISS3WSOtbZhEm7U8SNwt3/a+9\nrOXVvBGZpRs6ScjGwCqxL8i6SoR2ih8b7gOdUAXb51URp+rCcpaITh7XDxHqIhUF\nuUVIWjlkKdAMoSvX87HBX5q2wt5Lrt2AtBDcHHJTFikpIW7AM1b9gcybNqEVNquv\nSXWH6Y1Se0QzsR09WhMa44Pei3ATXZNWWvq6JLenwIfDXo2uV1h0KVT7P+vD2M+j\ndGbE2IQ01LUizqbr01h2oeJLZj2cIxcpr2yX25If6ZSTU2fW2wUUosCSaLz6aPzQ\nOrlgxF03AgMBAAECggEAOlmV1WqkoBniGLkkZoVhyii9EiI3SWLC3AkfGeoV4cR1\n/Sy47ekqYDVsZ0R0gNmnqP09/p8k9JwX5o5iBTZxwZ1lpng1YHwj7u7hA4iYzHWW\nTK1RVppo+O4ZX1CXKyndqIVWuUM3P39oQ6gtMre1IkHvdndlrfPPrgXgDU0UvWGO\nXFtOmheTOX8x/ZVXA51Y+rgqUIXI11/Q9fg1O4HE/g1hBUyzcI1go8qsJL6H8aSx\nhUY11PuG4DM3Obtlr/D3FvGLQ8xgx0KJg6FjnoDz7cv4Tj0mMWqEBJB7WlgjYdSR\nRJ5RPLQJREYJRelYcjxwc0HYae41V2QojttG4rMk0QKBgQDkkjhwfESDoOsfUK/M\n2YUhLDaGIHrRlUCpvgMQAbgcWMWJPMlzpZqUC1pDzmIaGZemyZIXBa4zfIFbf1Rv\ns/y0C+Qhbj3lMDE1/B1GvwkO5yud+vJ22wN7vC0jf3ub+aYGZYTJ7XNrKFLMNGGx\nVqfg0K+arku5j0/QfGm08Rv7eQKBgQC+NfEpXloj3mxwmkvPzIzNARalns6TsjSO\nmsDonToiEF1MyhFpwHxkqNWvn82xPttAMYQU+g+gcnws1bebK+18fbpnacR6S+Zw\nthlASifKuRD+BwVOIXicMigSi0EesjZzSh9+yMVVnISzEMv2jz4VF0y0870oGZNY\n1m111SxCLwKBgCDP3MpJDIzYzOfx7Uq67yGT9z/J6desVVwIqufhV0y6caEB2OmB\nHG+kMZEKT4rvoZWP2ijz5838UZWQ8c4XSG+QRW+HI9uCz42wY4OEaQh6pwhGvgfR\n6O4aVWCDLHt3mx3P9QAH1knLwBcQbfXHOtJLIupRmw1IRWzob0RKWHoBAoGBALY3\nuNs3n0TjbKEGv3/HZk9yLn7lPuLxAjZm/E0bajh90tOgdMQJeWF4+JSxk3ysSaAa\nj30E/Xlok5rj9mu5zl3HmI4/HdFG6vCpElGreKlVV3jzwtpRaFjCF++D5hOBCHaz\n2K49qgXU1q8wdSSznvbXhk2Hfntu3OBrMxuB509TAoGBAMDrFWoSghmip18/IK8e\nq8z9dzjETJB9INN2G9r9eOWRAI1QEwfpxLfULreXjMgTtzkK+f0kFwD4GVRDh+eh\nJ9OXNtpOtOH0ww27SQLRNT8LxPWEQH6hsI8fwHXVQ+AGzBPWFbG2jeuTmG/t7kmO\n7RYwDdaOqX74MWdUxKpjH0Qa\n-----END PRIVATE KEY-----\n",
+  "client_email": "foolemperor@stoked-edition-337807.iam.gserviceaccount.com",
+  "client_id": "117206983158885328595",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/foolemperor%40stoked-edition-337807.iam.gserviceaccount.com"
+}

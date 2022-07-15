@@ -1,0 +1,41 @@
+curl -H "Accept: application/xml" http://10.10.10.51/api/live_events
+
+curl -H "Accept: application/xml" http://10.10.10.51/api/live_events/194
+
+curl -H "Accept: application/xml" http://10.20.22.139/api/live_events/17/status
+
+curl -H "Accept: application/xml" http://10.10.10.55/api/jobs/128734/status
+
+curl -H "Accept: application/xml" http://10.10.10.49/api/live_events/26/inputs.json
+
+curl -H "Accept: application/xml" http://10.10.10.51/api/live_events/194/outputs
+
+curl -H "Accept: application/xml" -H "Content-type: application/xml" -d "<start></start>" http://10.10.10.51/api/live_events/194/start
+
+curl -H "Accept: application/xml" -H "Content-type: application/xml" -d "<start></start>" http://10.10.10.50/api/live_events/49/start?active_input_id=9884
+
+curl -H "Accept: application/xml" -H "Content-type: application/xml" -d "<stop></stop>" http://10.10.10.51/api/live_events/194/stop
+
+curl -H "Accept: application/xml" -H "Content-type: application/xml" -d "<reset></reset>" http://10.10.10.51/api/live_events/194/reset
+
+curl -H "Accept: application/xml" -H "Content-type: application/xml" -d "<input_id>9884</input_id>" http://10.10.10.50/api/live_events/49/activate_input
+
+curl -H "Accept: application/xml" -H "Content-type: application/xml" -d "<input_id>14384</input_id>" http://10.10.10.49/api/live_events/26/prepare_input
+
+curl -H "Accept: application/xml" -H "Content-type: application/xml" -d "<preview_image><width>720</width><height>480</height><name>sample.jpg</name></preview_image>" 
+
+curl -H "Accept: application/xml" http://10.10.10.51/api/devices
+
+http://10.10.10.51/images/thumbs/progress_job_8.jpg
+
+curl -H "Accept: application/xml" http://10.10.10.51/api/live_events/8/status.json
+
+curl -H "Accept: application/xml" http://10.10.10.51/api/system_status.json
+
+curl -H "Accept: application/xml" http://10.10.10.51/api/system_status.xml
+
+curl -H "Accept: application/xml" -H "Content-type: application/xml" -t playlist.xml http://10.10.10.51/api/live_events/194
+
+curl -H "Accept: application/xml" -H "Content-type: application/xml" -X PUT http://10.10.10.50/api/live_events/49?unlocked=1&active_input_id=15091
+
+curl -H "Accept: application/xml" -H "Content-type: application/xml" -d @insert.xml http://10.10.10.51/api/live_events/194/image_inserter
