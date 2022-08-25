@@ -1,6 +1,6 @@
 import socket
 
-msgFromClient       = "ㅁㄴㅇㄹㅈㄷㅋㅌㅊㅍ"
+msgFromClient       = "하위방가방가"
 bytesToSend         = str.encode(msgFromClient)
 serverAddressPort   = ("127.0.0.1", 5000)
 bufferSize          = 1024
