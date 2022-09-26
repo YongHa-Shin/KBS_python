@@ -24,6 +24,8 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_name, s
 gc = gspread.authorize(credentials)
 spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-Fj44MEAPv7T8qMNvqYSbSi_-elJEn4NsiavlRUhJHM/edit#gid=1554750920'
 
+# https://docs.google.com/spreadsheets/d/1-Fj44MEAPv7T8qMNvqYSbSi_-elJEn4NsiavlRUhJHM/edit#gid=0
+# https://docs.google.com/spreadsheets/d/1-Fj44MEAPv7T8qMNvqYSbSi_-elJEn4NsiavlRUhJHM/edit#gid=1554750920
 # 스프레드시트를 url을 통하여 오픈한다.
 wks = gc.open_by_url(spreadsheet_url)
 
