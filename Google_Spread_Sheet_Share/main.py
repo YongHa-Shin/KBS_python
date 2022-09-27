@@ -41,6 +41,5 @@ for cell in range_list:
 
 # 구글 스프레드시트에 유튜브 데이터 삽입
 worksheet.update_cells(range_list)
-
-
+del Yd
 
