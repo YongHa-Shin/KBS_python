@@ -2,9 +2,6 @@ from Youtube_data import Youtube_video_data
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-# Youtube_video_data 객체 생성 
-Yd = Youtube_video_data()
-
 print("시작_행")
 range_text_B = input()
 
@@ -13,24 +10,21 @@ range_text_F = input()
 
 sheet_range = "B{}:F{}".format(range_text_B, range_text_F)
 
-# ********************************************************************************************************************************************************************* #
-# sheet_range = 'B184:F184' # ******************************************************************************************************************************************* #
-# ********************************************************************************************************************************************************************* #
-
 # 스프레드시트 구글 권한 처리
 scope = ['https://spreadsheets.google.com/feeds']
-json_file_name = 'Google_Spread_Sheet_Share\stoked-edition-337807-fe85722dd588.json'
+json_file_name = 'youtube-data-proje-772f0e0e007e.json'
 credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_name, scope)
 gc = gspread.authorize(credentials)
-spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-Fj44MEAPv7T8qMNvqYSbSi_-elJEn4NsiavlRUhJHM/edit#gid=1554750920'
+spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-Fj44MEAPv7T8qMNvqYSbSi_-elJEn4NsiavlRUhJHM/edit#gid=0'
 
-# https://docs.google.com/spreadsheets/d/1-Fj44MEAPv7T8qMNvqYSbSi_-elJEn4NsiavlRUhJHM/edit#gid=0
-# https://docs.google.com/spreadsheets/d/1-Fj44MEAPv7T8qMNvqYSbSi_-elJEn4NsiavlRUhJHM/edit#gid=1554750920
 # 스프레드시트를 url을 통하여 오픈한다.
 wks = gc.open_by_url(spreadsheet_url)
 
 # '유튜브LIVE 일지' 시트를 선택한다.
 worksheet = wks.worksheet('유튜브LIVE 일지')
+
+# Youtube_video_data 객체 생성 
+Yd = Youtube_video_data()
 
 # '유튜브LIVE 일지' 시트의 Cell 범위를 선택하여 range_list에 저장한다.
 temp = []

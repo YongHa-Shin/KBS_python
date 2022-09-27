@@ -6,7 +6,7 @@ from datetime import timedelta
 class Youtube_video_data:
 
     def __init__(self):
-        self.api_key = 'AIzaSyDIRXONB_JFvavwf7XFJ3esQrF9tKTd6Jw'
+        self.api_key = 'AIzaSyDPafGCd3dlAzfH9Wa1vDDWirchypWbGdg'
         self.dateDict = {0: '(월)',1: '(화)',2: '(수)',3: '(목)',4: '(금)',5: '(토)',6: '(일)'}
         self.video_id = None
         self.data = []
