@@ -15,6 +15,8 @@ scope = ['https://spreadsheets.google.com/feeds']
 json_file_name = 'youtube-data-proje-772f0e0e007e.json'
 credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_name, scope)
 gc = gspread.authorize(credentials)
+
+# 구글 스프레드시트 url 주소
 spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-Fj44MEAPv7T8qMNvqYSbSi_-elJEn4NsiavlRUhJHM/edit#gid=0'
 
 # 스프레드시트를 url을 통하여 오픈한다.
@@ -41,5 +43,7 @@ for cell in range_list:
 
 # 구글 스프레드시트에 유튜브 데이터 삽입
 worksheet.update_cells(range_list)
+
+# 객체 삭제
 del Yd
 

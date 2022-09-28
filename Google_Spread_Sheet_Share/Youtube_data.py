@@ -27,7 +27,7 @@ class Youtube_video_data:
             self.start_time = logdate[11:16]
 
         except:
-            print('API is not response(get_date)')
+            print('get_date is Error!')
 
     def get_video_duration(self, duration):
         try:
@@ -63,7 +63,7 @@ class Youtube_video_data:
             sum_seconds = day + hour + minute + second
             self.video_duration = str(timedelta(seconds = sum_seconds))
         except:
-            print('API is not response(get_video_duration)')
+            print("get_video_duration is Error!")
 
     def get_video_snippet(self):
         try:
