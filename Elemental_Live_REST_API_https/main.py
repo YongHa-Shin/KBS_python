@@ -4,17 +4,17 @@
 # Youtube Live SDI 4 <인제스트실> : Event ID = 19, Input ID = 30, Output ID = 175
 
 from Elemental_Live_REST_API import Elemental_API
-import ssl
+import urllib3
+
+urllib3.disable_warnings() # https 인증서 관련 경고문 제거
 
 enc_ip = '10.20.22.139' #Elemental Live: IP
 enc_user = 'encoder' #Elemental Live: USER ID
 enc_key = 'y5jYbKPpsnpt1bjs_MVp' #Elemental Live: Authentication Key
 
-enc_output_id = ''
-enc_img_path_right = '/data/ftpuser/image/right_top logo.png' # 우상단_리플레이.png, right_top logo.png
+enc_img_path_right = '/data/ftpuser/image/right_top_logo2.png' # 우상단_리플레이.png, right_top logo.png
 enc_img_path_left = '/data/ftpuser/image/좌상.png'
 enc_img_layer_0 = '<layer>0</layer>'
-# enc_img_layer_1 = '<layer>1</layer>'
 enc_file_path = '/data/ftpuser/archive/BGM.mp4'
 enc_file_path2 = '/data/ftpuser/archive/test2.mp4'
 enc_nework_input = 'udp://localhost:5002?interface=lo'
@@ -22,14 +22,15 @@ enc_sdi_num = '4' # SDI Number, 1 or 2 or 3 or 4 중에 선택하세요
 enc_network_address = 'udp://localhost:5002?interface=lo'
 
 #---------------- 꼭 수정하면서 사용하도록 ---------------#
-enc_event = '30'                 #Elemental Live Event ID
+enc_event = '38'                 #Elemental Live Event ID
 enc_input_id = '46'                   #Elemental INPUT ID
+enc_output_id = '199'
 #-------------------------------------------------------#
 
 ELR = Elemental_API(enc_ip, enc_user, enc_key, enc_event)
 
-print(ssl.OPENSSL_VERSION)
-ELR.getTest('status', 'json') 
+ELR.getTest('status', 'json')
+ELR.postTest_output_image_inserter('image_inserter', enc_img_path_right, enc_img_layer_0, enc_output_id)
 # ELR.postTest_add_playlist_file('inputs', enc_file_path)
 # ELR.postTest_add_playlist_sdi('inputs', enc_sdi_num)
 # ELR.postTest_replace_playlist_file('playlist', enc_file_path2)

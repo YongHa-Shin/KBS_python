@@ -10,8 +10,9 @@ enc_user = 'encoder' #Elemental Live: USER ID
 enc_key = 'y5jYbKPpsnpt1bjs_MVp' #Elemental Live: Authentication Key
 
 enc_img_path_right = '/data/ftpuser/image/right_top_logo2.png' # 우상단_리플레이.png, right_top_logo.png, right_top_logo2.png
-enc_img_path_left = '/data/ftpuser/image/left_top.png'        # image_null.png, left_top.png
+enc_img_path_left = '/data/ftpuser/image/left_top_hang.png'        # image_null.png, left_top.png
 enc_img_layer_0 = '<layer>0</layer>'
+enc_file_path = '/data/ftpuser/archive/Live_Ending.mp4'
 
 enc_event = '18'                 #Elemental Live Event ID
 enc_input_id = '29'                   #Elemental INPUT ID
@@ -23,8 +24,10 @@ ELR.postTest_input_image_inserter('image_inserter', enc_img_path_left, enc_img_l
 ELR.postTest_global_image_inserter('image_inserter', enc_img_path_right, enc_img_layer_0)              # 5.우상로고 삽입
 ELR.postTest_adjust_audio_gain('adjust_audio_gain', '10')                                              # 6.오디오 출력 조정 (보통은 10dB정도 올림) 
 
+# ELR.postTest_add_playlist_file('inputs', enc_file_path)
+
 # 하단자막 올리기
-caption = "/data/ftpuser/image/image_null.png" # caption.png, image_null.png
+caption = "/data/ftpuser/image/right_top_logo2.png" # caption.png, image_null.png
 ELR.postTest_output_image_inserter('image_inserter', caption, enc_img_layer_0, '173')
 
 # # 썸네일로 덮어버리기
