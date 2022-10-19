@@ -9,7 +9,7 @@ enc_ip = '10.20.22.139' #Elemental Live: IP
 enc_user = 'encoder' #Elemental Live: USER ID
 enc_key = 'y5jYbKPpsnpt1bjs_MVp' #Elemental Live: Authentication Key
 
-enc_img_path_right = '/data/ftpuser/image/right_top_logo2.png' # 우상단_리플레이.png, right_top_logo.png, right_top_logo2.png
+enc_img_path_right = '/data/ftpuser/image/right_top_logo2.png' # 우상단_리플레이.png, right_top_logo2.png
 enc_img_path_left = '/data/ftpuser/image/left_top.png'        # image_null.png, left_top.png
 enc_img_layer_0 = '<layer>0</layer>'
 enc_file_path = '/data/ftpuser/archive/Live_Ending.mp4'

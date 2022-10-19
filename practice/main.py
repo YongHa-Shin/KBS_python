@@ -1,9 +1,2 @@
-from COUNTER import counter
-
-print("Hello world~!")
-
-Counter = counter()
-print(Counter.counter_addition(3,1))
-print(Counter.counter_minus(3,1))
-print(Counter.counter_multiple(3,2000000000000000))
-print(Counter.counter_division(3,2))
+{'live_event': {'id': '24', 'status': 'running', 'outputs': [{'id': '180', 'frames_complete': '0', 'uri': 'rtmp://b.rtmp.youtube.com/live2?backup=1/vqtu-969g-gr3m-euhp-46r3', 'fps': '30.1', 'pct_rt': '100', 'psnr': '46.7', 'audio_level': '-60', 'elapsed': 59, 'pct': 'Streaming', 'output_status': 'running'}, {'id': 180, 'startable': False, 'stoppable': False, 'pausable': True, 'unpausable': False, 'rolloverable': False, 'alert_set': False, 'alert_messages': ''}], 'output_groups': [{'id': 64, 'startable': False, 'stoppable': False, 'pausable': True, 'unpausable': False}], 'average_fps': 30.1, 'type': 'job', 'fill_msec': '0', 'event_state': 'running', 'elapsed': 59, 'svq': {'quality1': '0.000', 'quality2': '0.000', 'quality3': '0.000'}, 'active_input': '35', 'buffer_avg': '1', 'buffer_max': '2', 'dropped_frames': '0', 'inputs': [{'id': '35', 'state': 'clear', 'buffer_avg': '1', 'buffer_max': '2', 'dropped_frames': '0', 'input_information': {'transport': {'status': {'type': 'UDP', 'source_ip': 'localhost', 'source_port': '5002', 'ts_id': '1', 'program_ids': '1'}, 'counters': {'cc_errors': '0'}}, 'video': {'status': {'pid': '481', 'timecode': 'Embedded Timecode Invalid', 'codec': 'H.264', 'resolution': '1920x1080', 'par': '1:1', 'color_space': '4:2:0', 'frame_rate': '30.00', 'bitrate': '8000000'}, 'counters': {}}, 'audio': [{'status': {'pid': '482', 'codec': 'AAC', 'language': 'und', 'channels': '2', 'sample_format': 'S16', 'sample_rate': '48000', 'bitrate': '255000'}, 'counters': {}}]}, 'input_label': '', 'uri': 'udp://localhost:5002?interface'}, {'id': '54', 'state': 'pending', 'input_label': '', 'uri': 2}], 'alerts': [], 
+'audio_level': '-60', 'elapsed_time_in_words': '00:00:59'}}
