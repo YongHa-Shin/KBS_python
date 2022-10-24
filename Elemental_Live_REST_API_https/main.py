@@ -1,8 +1,3 @@
-# Youtube Live SDI 1 Vmix Backup <인제스트실> : Event ID = 24, Input1 ID = 35, Input2 ID = 54
-# Youtube Live SDI 2 <인제스트실> : Event ID = 17, Input ID = 28, Output ID = 171
-# Youtube Live SDI 3 <인제스트실> : Event ID = 18, Input ID = 29, Output ID = 173
-# Youtube Live SDI 4 <인제스트실> : Event ID = 19, Input ID = 30, Output ID = 175
-
 from Elemental_Live_REST_API import Elemental_API
 import urllib3
 
@@ -10,7 +5,7 @@ urllib3.disable_warnings() # https 인증서 관련 경고문 제거
 
 enc_ip = '10.20.22.139' #Elemental Live: IP
 enc_user = 'encoder' #Elemental Live: USER ID
-enc_key = 'y5jYbKPpsnpt1bjs_MVp' #Elemental Live: Authentication Key
+enc_key = 'x3QojFkUjvkkojybswS7' #Elemental Live: Authentication Key
 
 enc_img_path_right = '/data/ftpuser/image/right_top_logo2.png' # 우상단_리플레이.png, right_top logo.png
 enc_img_path_left = '/data/ftpuser/image/좌상.png'
