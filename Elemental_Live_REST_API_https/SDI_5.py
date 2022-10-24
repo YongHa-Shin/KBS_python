@@ -7,14 +7,14 @@ urllib3.disable_warnings() # https 인증서 관련 경고문 제거
 
 enc_ip = '10.20.22.139' #Elemental Live: IP
 enc_user = 'encoder' #Elemental Live: USER ID
-enc_key = 'y5jYbKPpsnpt1bjs_MVp' #Elemental Live: Authentication Key
+enc_key = 'x3QojFkUjvkkojybswS7' #Elemental Live: Authentication Key
 
 enc_img_path_right = '/data/ftpuser/image/image_null.png' # 우상단_리플레이.png, right_top_logo.png, right_top_logo2.png
 enc_img_path_left = '/data/ftpuser/image/image_null.png'        # image_null.png
 enc_img_layer_0 = '<layer>0</layer>'
 
-enc_event = '34'                 #Elemental Live Event ID
-enc_input_id = '59'                   #Elemental INPUT ID
+enc_event = '5'                 #Elemental Live Event ID
+enc_input_id = '8'                   #Elemental INPUT ID
 
 ELR = Elemental_API(enc_ip, enc_user, enc_key, enc_event)
 
