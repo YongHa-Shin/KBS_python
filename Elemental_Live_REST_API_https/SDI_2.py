@@ -38,3 +38,13 @@ ELR.postTest_adjust_audio_gain('adjust_audio_gain', '10')                       
 
 # # 7.Input Swiching
 # ELR.postTest_activate_input('activate_input', '94')
+
+# 'inputs'
+# ELR.postTest_add_playlist_file('inputs', enc_file_path)
+# ELR.postTest_add_playlist_sdi('inputs', '4')
+# ELR.postTest_add_playlist_network('inputs', 'https://w-assembly.hscdn.com/assembly/bon_720p/playlist.m3u8')
+
+# 'playlist'
+# ELR.postTest_replace_playlist_file('playlist', enc_file_path)
+## 동작 안됨... # ELR.postTest_replace_playlist_sdi('playlist', '4')
+## 동작 안됨... # ELR.postTest_replace_playlist_network('playlist', 'https://w-assembly.hscdn.com/assembly/bon_720p/playlist.m3u8')

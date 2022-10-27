@@ -31,3 +31,13 @@ ELR.postTest_output_image_inserter('image_inserter', caption, enc_img_layer_0, '
 # ssum = '/data/ftpuser/image/ssum2.png'
 # ELR.postTest_input_image_inserter('image_inserter', ssum, enc_img_layer_0, '59')
 # ELR.postTest_adjust_audio_gain('adjust_audio_gain', '-60')  
+
+# 'inputs'
+# ELR.postTest_add_playlist_file('inputs', enc_file_path)
+# ELR.postTest_add_playlist_sdi('inputs', '4')
+# ELR.postTest_add_playlist_network('inputs', 'https://w-assembly.hscdn.com/assembly/bon_720p/playlist.m3u8')
+
+# 'playlist'
+# ELR.postTest_replace_playlist_file('playlist', enc_file_path)
+## 동작 안됨... # ELR.postTest_replace_playlist_sdi('playlist', '4')
+## 동작 안됨... # ELR.postTest_replace_playlist_network('playlist', 'https://w-assembly.hscdn.com/assembly/bon_720p/playlist.m3u8')
