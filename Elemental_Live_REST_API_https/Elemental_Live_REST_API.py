@@ -158,7 +158,7 @@ class Elemental_API:
     def postTest_replace_playlist_sdi(self, ACT, SDI_NUM):
         try:
             headers = self.encAuth(ACT)
-            datas = ('<inputs><input><loop_source>true</loop_source><device_input><channel>{}</channel><channel_type>3G-SDI</channel_type></device_input></input></inputs>'
+            datas = ('<inputs><input><loop_source>true</loop_source><file_input><channel>{}</channel><channel_type>3G-SDI</channel_type></file_input></input></inputs>'
             .format(SDI_NUM)).encode('utf-8')
             print(datas)
             response = requests.post('https://{}/api/live_events/{}/{}'.format(self.IP, self.EVENT_ID, ACT), headers=headers, data=datas, verify = False)

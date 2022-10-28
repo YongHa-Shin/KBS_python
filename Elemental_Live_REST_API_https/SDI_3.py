@@ -24,15 +24,7 @@ ELR.postTest_input_image_inserter('image_inserter', enc_img_path_left, enc_img_l
 ELR.postTest_global_image_inserter('image_inserter', enc_img_path_right, enc_img_layer_0)              # 5.우상로고 삽입
 ELR.postTest_adjust_audio_gain('adjust_audio_gain', '10')                                              # 6.오디오 출력 조정 (보통은 10dB정도 올림) 
 
-# 'inputs'
-# ELR.postTest_add_playlist_file('inputs', enc_file_path)
-# ELR.postTest_add_playlist_sdi('inputs', '4')
-# ELR.postTest_add_playlist_network('inputs', 'https://w-assembly.hscdn.com/assembly/bon_720p/playlist.m3u8')
-
-# 'playlist'
-# ELR.postTest_replace_playlist_file('playlist', enc_file_path)
-## 동작 안됨... # ELR.postTest_replace_playlist_sdi('playlist', '4')
-## 동작 안됨... # ELR.postTest_replace_playlist_network('playlist', 'https://w-assembly.hscdn.com/assembly/bon_720p/playlist.m3u8')
+# ELR.postTest_replace_playlist_sdi('playlist', '4')
 
 # # 하단자막 올리기
 # caption = "/data/ftpuser/image/image_null.png" # caption.png, image_null.png
@@ -42,3 +34,14 @@ ELR.postTest_adjust_audio_gain('adjust_audio_gain', '10')                       
 # ssum = '/data/ftpuser/image/ssum.png'
 # ELR.postTest_input_image_inserter('image_inserter', ssum, enc_img_layer_0, '29')
 # ELR.postTest_adjust_audio_gain('adjust_audio_gain', '-60')  
+
+# 'inputs'
+# ELR.postTest_add_playlist_file('inputs', enc_file_path)
+# ELR.postTest_add_playlist_sdi('inputs', '4')
+# ELR.postTest_add_playlist_network('inputs', 'https://w-assembly.hscdn.com/assembly/bon_720p/playlist.m3u8')
+
+# 'playlist'
+# ELR.postTest_replace_playlist_file('playlist', enc_file_path)
+## 동작 안됨... # ELR.postTest_replace_playlist_sdi('playlist', '4')
+# # ELR.postTest_replace_playlist_network('playlist', 'https://w-assembly.hscdn.com/assembly/bon_720p/playlist.m3u8')
+## file 함수 사용해야 들어감... 고로 네트워크 함수를 따로 사용하지말고 file 함수를 사용하길...
